@@ -1,0 +1,58 @@
+import { Category } from '@/types';
+
+export const categories: Category[] = [
+  {
+    id: 'cat-electronics',
+    slug: 'electronics',
+    nameAr: 'إلكترونيات',
+    nameEn: 'Electronics',
+    descriptionAr: 'أحدث الأجهزة الذكية وإكسسواراتها بجودة عالية وأسعار تنافسية.',
+    descriptionEn: 'Latest smart devices and accessories with high quality and competitive prices.',
+    image: 'https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  {
+    id: 'cat-home',
+    slug: 'home',
+    nameAr: 'المنزل',
+    nameEn: 'Home',
+    descriptionAr: 'لمسات أناقة لمنزلك من ديكورات وأدوات عملية مختارة بعناية.',
+    descriptionEn: 'Elegant touches for your home from decor and practical tools.',
+    image: 'https://images.pexels.com/photos/30727755/pexels-photo-30727755.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  {
+    id: 'cat-fashion',
+    slug: 'fashion',
+    nameAr: 'الأزياء',
+    nameEn: 'Fashion',
+    descriptionAr: 'قطع ملابس عصرية تناسب أسلوبك اليومي بلمسة من الأناقة.',
+    descriptionEn: 'Modern clothing pieces that suit your daily style.',
+    image: 'https://images.pexels.com/photos/8743972/pexels-photo-8743972.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  {
+    id: 'cat-beauty',
+    slug: 'beauty',
+    nameAr: 'العناية والجمال',
+    nameEn: 'Beauty',
+    descriptionAr: 'منتجات عناية بالبشرة والجمال لإطلالة مشرقة وثقة أكبر.',
+    descriptionEn: 'Skincare and beauty products for a radiant look.',
+    image: 'https://images.pexels.com/photos/4173450/pexels-photo-4173450.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  {
+    id: 'cat-accessories',
+    slug: 'accessories',
+    nameAr: 'الإكسسوارات',
+    nameEn: 'Accessories',
+    descriptionAr: 'ساعات وحقائب وإكسسوارات تكمّل إطلالتك بلمسة مميزة.',
+    descriptionEn: 'Watches, bags, and accessories that complete your look.',
+    image: 'https://images.pexels.com/photos/6157411/pexels-photo-6157411.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  {
+    id: 'cat-gifts',
+    slug: 'gifts',
+    nameAr: 'الهدايا',
+    nameEn: 'Gifts',
+    descriptionAr: 'هدايا مختارة وعبوات أناقة تناسب كل المناسبات السعيدة.',
+    descriptionEn: 'Curated gifts and elegant packaging for every occasion.',
+    image: 'https://images.pexels.com/photos/4841374/pexels-photo-4841374.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+];
