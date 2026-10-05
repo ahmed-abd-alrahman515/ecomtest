@@ -34,11 +34,11 @@ export function CategoryCard({ category, productCount, className, style, variant
         />
         <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent" />
         <div className="relative p-5 text-white">
-          <h3 className="text-lg font-bold lg:text-xl">{category.nameAr}</h3>
+          <h3 className="text-lg font-extrabold lg:text-xl">{category.nameAr}</h3>
           {productCount !== undefined && (
             <p className="mt-1 text-xs text-white/80">{productCount} منتج</p>
           )}
-          <div className="mt-3 flex items-center gap-1 text-sm font-medium transition-all group-hover:gap-2">
+          <div className="mt-3 flex items-center gap-1 text-sm font-bold text-gold transition-all group-hover:gap-2">
             تسوق الآن
             <ArrowLeft className="h-4 w-4" />
           </div>
@@ -65,12 +65,12 @@ export function CategoryCard({ category, productCount, className, style, variant
       />
       <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent" />
       <div className="relative p-4 text-white">
-        <h3 className="text-base font-bold">{category.nameAr}</h3>
+        <h3 className="text-base font-extrabold">{category.nameAr}</h3>
         <div className="mt-2 flex items-center justify-between">
           {productCount !== undefined && (
             <span className="text-xs text-white/80">{productCount} منتج</span>
           )}
-          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm transition-all group-hover:-translate-x-1 group-hover:bg-white/30">
+          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gold text-gold-foreground backdrop-blur-sm transition-all group-hover:-translate-x-1 group-hover:bg-gold-dark group-hover:text-white">
             <ArrowLeft className="h-4 w-4" />
           </span>
         </div>

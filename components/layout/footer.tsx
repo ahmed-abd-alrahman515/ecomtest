@@ -10,6 +10,7 @@ export function Footer() {
     { icon: Instagram, href: siteConfig.social.instagram, label: 'انستغرام' },
     { icon: Facebook, href: siteConfig.social.facebook, label: 'فيسبوك' },
   ];
+  const addressLine = [siteConfig.address.cityAr, siteConfig.address.streetAr].filter(Boolean).join(' - ');
 
   return (
     <footer className="mt-0 bg-navy text-white">
@@ -23,8 +24,8 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.3fr_0.8fr_0.8fr_1.1fr]">
           <Reveal className="space-y-5">
             <Link href="/" className="flex items-center gap-2">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-lg font-extrabold text-white shadow-sm">ز</span>
-              <span className="text-xl font-extrabold">{siteConfig.storeName}</span>
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gold text-lg font-black text-gold-foreground shadow-sm">ز</span>
+              <span className="text-xl font-black">{siteConfig.storeName}</span>
             </Link>
             <p className="max-w-sm text-sm leading-relaxed text-white/65">
               زهرة ريحانة متجر متخصص في العطور الأصلية بروح سعودية ولمسة فاخرة تجمع بين العود والمسك وورد الطائف والعنبر.
@@ -40,7 +41,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white/70 transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-white"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white/70 transition-all hover:-translate-y-0.5 hover:border-gold hover:bg-gold hover:text-gold-foreground"
                 >
                   <s.icon className="h-4 w-4" />
                 </a>
@@ -78,20 +79,20 @@ export function Footer() {
             <h3 className="mb-4 text-sm font-bold text-white">تواصل معنا</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-white/65">
-                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
                 <span dir="ltr">{siteConfig.contact.phoneDisplay}</span>
               </li>
               <li className="flex items-start gap-2 text-sm text-white/65">
-                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
                 <span dir="ltr">{siteConfig.contact.email}</span>
               </li>
               <li className="flex items-start gap-2 text-sm text-white/65">
-                <MessageCircle className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                <MessageCircle className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
                 <span>واتساب: {siteConfig.contact.whatsapp}</span>
               </li>
               <li className="flex items-start gap-2 text-sm text-white/65">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                <span>{siteConfig.address.cityAr} - {siteConfig.address.streetAr}</span>
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                <span>{addressLine}</span>
               </li>
             </ul>
           </Reveal>

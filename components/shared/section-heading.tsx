@@ -30,15 +30,15 @@ export function SectionHeading({
     >
       <div>
         <div className={cn('mb-2 flex items-center gap-2', centered && 'justify-center')}>
-          <span className="h-5 w-1 rounded-full bg-primary" />
-          <h2 className="text-2xl font-extrabold tracking-normal text-navy lg:text-4xl">{title}</h2>
+          <span className="h-5 w-1 rounded-full bg-gold" />
+          <h2 className="text-2xl font-black tracking-normal text-navy lg:text-4xl">{title}</h2>
         </div>
         {subtitle && <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground lg:text-base">{subtitle}</p>}
       </div>
       {href && !centered && (
         <Link
           href={href}
-          className="hidden shrink-0 items-center gap-2 rounded-full border border-border bg-white px-4 py-2 text-sm font-semibold text-primary shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:bg-primary/5 sm:flex"
+          className="hidden shrink-0 items-center gap-2 rounded-full border border-gold/25 bg-white px-4 py-2 text-sm font-bold text-navy shadow-sm transition-all hover:-translate-y-0.5 hover:border-gold hover:bg-gold-soft sm:flex"
         >
           {hrefLabel}
           <ArrowLeft className="h-4 w-4" />

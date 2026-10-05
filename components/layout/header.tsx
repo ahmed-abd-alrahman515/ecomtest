@@ -48,7 +48,7 @@ export function Header() {
       <div className="hidden bg-navy text-white/90 md:block">
         <div className="container mx-auto flex h-9 items-center justify-between px-4 text-xs">
           <p className="flex items-center gap-2">
-            <span className="inline-block h-1.5 w-1.5 rounded-full bg-amber-300" />
+            <span className="inline-block h-1.5 w-1.5 rounded-full bg-gold" />
             عطور أصلية مستوحاة من الهوية السعودية
           </p>
           <div className="flex items-center gap-4">
@@ -83,8 +83,8 @@ export function Header() {
                 <div className="flex h-16 items-center border-b px-4">
                   <SheetClose asChild>
                     <Link href="/" className="flex items-center gap-2" aria-label={siteConfig.storeName}>
-                      <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-sm font-bold text-white shadow-sm">ز</span>
-                      <span className="font-bold text-navy">{siteConfig.storeName}</span>
+                      <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gold text-sm font-black text-gold-foreground shadow-sm">ز</span>
+                      <span className="font-extrabold text-navy">{siteConfig.storeName}</span>
                     </Link>
                   </SheetClose>
                 </div>
@@ -121,10 +121,10 @@ export function Header() {
 
           {/* Logo */}
           <Link href="/" className="group flex shrink-0 items-center gap-2" aria-label={siteConfig.storeName}>
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-lg font-extrabold text-white shadow-sm transition-transform group-hover:-translate-y-0.5 lg:h-10 lg:w-10">
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gold text-lg font-black text-gold-foreground shadow-sm transition-transform group-hover:-translate-y-0.5 lg:h-10 lg:w-10">
               ز
             </span>
-            <span className="hidden text-lg font-bold text-navy sm:block lg:text-xl">{siteConfig.storeName}</span>
+            <span className="hidden text-lg font-extrabold text-navy sm:block lg:text-xl">{siteConfig.storeName}</span>
           </Link>
 
           {/* Desktop nav */}

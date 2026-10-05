@@ -22,10 +22,10 @@ export const siteConfig = {
     hoursEn: 'Daily from 9 AM to 11 PM',
   },
   address: {
-    cityAr: 'الرياض',
-    cityEn: 'Riyadh',
-    streetAr: 'حي العليا، طريق الملك فهد',
-    streetEn: 'Al Olaya District, King Fahd Road',
+    cityAr: 'تبوك',
+    cityEn: 'Tabuk',
+    streetAr: '',
+    streetEn: '',
   },
   shipping: {
     freeThreshold: 200,

@@ -12,10 +12,10 @@ import { useWishlist } from '@/lib/wishlist-context';
 import { cn } from '@/lib/utils';
 
 const badgeConfig: Record<string, { label: string; className: string }> = {
-  'best-seller': { label: 'الأكثر مبيعاً', className: 'bg-primary text-white' },
+  'best-seller': { label: 'الأكثر مبيعاً', className: 'bg-gold text-gold-foreground' },
   new: { label: 'جديد', className: 'bg-emerald-600 text-white' },
   sale: { label: 'خصم', className: 'bg-rose-600 text-white' },
-  limited: { label: 'كمية محدودة', className: 'bg-amber-500 text-white' },
+  limited: { label: 'كمية محدودة', className: 'bg-gold-dark text-white' },
 };
 
 interface ProductCardProps {
@@ -80,7 +80,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
 
         <button
           onClick={handleWishlist}
-          className="absolute left-3 top-3 flex h-9 w-9 items-center justify-center rounded-full border border-white/70 bg-white/90 text-navy shadow-sm backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:bg-white hover:text-primary"
+          className="absolute left-3 top-3 flex h-9 w-9 items-center justify-center rounded-full border border-white/70 bg-white/90 text-navy shadow-sm backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:bg-white hover:text-gold"
           aria-label={inWishlist ? 'إزالة من المفضلة' : 'إضافة للمفضلة'}
         >
           <Heart
@@ -91,7 +91,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
         <div className="absolute inset-x-3 bottom-3 translate-y-0 opacity-100 transition-all duration-300 md:translate-y-10 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100">
           <button
             onClick={handleAddToCart}
-            className="flex w-full items-center justify-center gap-2 rounded-lg bg-navy/90 px-3 py-2.5 text-xs font-semibold text-white shadow-sm backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:bg-primary"
+            className="flex w-full items-center justify-center gap-2 rounded-lg bg-navy/90 px-3 py-2.5 text-xs font-bold text-white shadow-sm backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:bg-gold hover:text-gold-foreground"
           >
             <ShoppingCart className="h-4 w-4" />
             {product.variants.length > 0 ? 'عرض الخيارات' : 'أضف للسلة'}
@@ -101,7 +101,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
 
       <div className="flex flex-1 flex-col p-4">
         {category && (
-          <p className="mb-2 text-[11px] font-semibold text-muted-foreground">{category.nameAr}</p>
+          <p className="mb-2 text-[11px] font-bold text-gold-dark">{category.nameAr}</p>
         )}
 
         {product.rating > 0 && (
@@ -114,7 +114,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
           </div>
         )}
 
-        <h3 className="line-clamp-2 min-h-[2.55rem] text-sm font-bold leading-snug text-navy transition-colors group-hover:text-primary lg:text-[15px]">
+        <h3 className="line-clamp-2 min-h-[2.55rem] text-sm font-extrabold leading-snug text-navy transition-colors group-hover:text-gold-dark lg:text-[15px]">
           {product.nameAr}
         </h3>
 
@@ -123,19 +123,19 @@ export function ProductCard({ product, className }: ProductCardProps) {
         </p>
 
         <div className="mt-auto flex flex-wrap items-baseline gap-2 pt-4">
-          <span className="text-lg font-extrabold text-navy">{formatPrice(product.price)}</span>
+          <span className="text-lg font-black text-gold-dark">{formatPrice(product.price)}</span>
           {product.oldPrice && (
             <span className="text-xs text-muted-foreground line-through">{formatPrice(product.oldPrice)}</span>
           )}
           {discount && (
-            <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-bold text-primary">
+            <span className="rounded-full bg-gold-soft px-2 py-0.5 text-[10px] font-bold text-gold-dark">
               وفر {discount}%
             </span>
           )}
         </div>
 
         <div className="mt-3 hidden items-center justify-between border-t border-border pt-3 text-xs text-muted-foreground sm:flex">
-          <span className="flex items-center gap-1 transition-colors group-hover:text-primary">
+          <span className="flex items-center gap-1 transition-colors group-hover:text-gold-dark">
             <Eye className="h-3.5 w-3.5" />
             عرض سريع
           </span>

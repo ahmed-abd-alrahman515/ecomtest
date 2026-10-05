@@ -59,6 +59,12 @@ const config: Config = {
         navy: 'hsl(var(--navy))',
         slate: 'hsl(var(--slate))',
         surface: 'hsl(var(--surface))',
+        gold: {
+          DEFAULT: 'hsl(var(--gold))',
+          dark: 'hsl(var(--gold-dark))',
+          soft: 'hsl(var(--gold-soft))',
+          foreground: 'hsl(var(--gold-foreground))',
+        },
         chart: {
           '1': '12 76% 61%',
           '2': '173 58% 39%',

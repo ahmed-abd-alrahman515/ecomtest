@@ -28,8 +28,8 @@ export function CategoriesSection() {
       <div className="premium-container">
         <Reveal className="mb-9 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end lg:mb-10">
           <div>
-            <h2 className="text-3xl font-extrabold leading-tight text-navy lg:text-[42px]">
-              <span className="text-primary">تسوق</span> حسب الرائحة
+            <h2 className="text-3xl font-black leading-tight text-navy lg:text-[42px]">
+              <span className="text-gold">تسوق</span> حسب الرائحة
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-7 text-muted-foreground lg:text-base">
               استكشف مجموعات العود والمسك وورد الطائف والعنبر، بروائح سعودية أصلية مختارة بعناية.
@@ -37,7 +37,7 @@ export function CategoriesSection() {
           </div>
           <Link
             href="/categories"
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-white px-4 py-2 text-sm font-semibold text-primary shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:bg-primary/5"
+            className="inline-flex items-center gap-2 rounded-full border border-gold/25 bg-white px-4 py-2 text-sm font-bold text-navy shadow-sm transition-all hover:-translate-y-0.5 hover:border-gold hover:bg-gold-soft"
           >
             عرض الكل
             <ArrowLeft className="h-4 w-4" />

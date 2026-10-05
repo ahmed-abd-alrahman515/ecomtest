@@ -23,6 +23,7 @@ export default function ContactPage() {
     { icon: Mail, label: 'البريد الإلكتروني', value: siteConfig.contact.email, href: `mailto:${siteConfig.contact.email}` },
     { icon: MessageCircle, label: 'واتساب', value: siteConfig.contact.whatsapp, href: `https://wa.me/${siteConfig.contact.whatsapp.replace(/[^0-9]/g, '')}` },
   ];
+  const addressLine = [siteConfig.address.cityAr, siteConfig.address.streetAr].filter(Boolean).join(' - ');
 
   return (
     <div className="bg-surface/60 py-6 lg:py-10">
@@ -116,18 +117,25 @@ export default function ContactPage() {
                   <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                   <div>
                     <p className="text-sm font-bold text-navy">العنوان</p>
-                    <p className="text-sm text-muted-foreground">{siteConfig.address.cityAr} - {siteConfig.address.streetAr}</p>
+                    <p className="text-sm text-muted-foreground">{addressLine}</p>
                   </div>
                 </li>
               </ul>
             </Reveal>
 
             {/* Map placeholder */}
-            <Reveal delay={180} className="flex aspect-video items-center justify-center rounded-2xl border border-border bg-white shadow-sm">
-              <div className="text-center">
-                <MapPin className="mx-auto mb-2 h-10 w-10 text-muted-foreground/40" />
-                <p className="text-sm text-muted-foreground">خريطة الموقع</p>
-              </div>
+            <Reveal delay={180} className="overflow-hidden rounded-2xl border border-border bg-white shadow-sm">
+              <iframe
+                title="خريطة الموقع في تبوك"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112309.66068874947!2d36.64830330558393!3d28.398825319873886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15a9ad0594132365%3A0x6f40e3c6b6139acf!2z2KrYqNmI2YMg2KfZhNiz2LnZiNiv2YrYqQ!5e0!3m2!1sar!2seg!4v1791201149322!5m2!1sar!2seg"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                className="aspect-video h-full min-h-[260px] w-full"
+              />
             </Reveal>
           </div>
         </div>
