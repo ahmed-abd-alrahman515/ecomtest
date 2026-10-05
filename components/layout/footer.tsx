@@ -23,11 +23,14 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.3fr_0.8fr_0.8fr_1.1fr]">
           <Reveal className="space-y-5">
             <Link href="/" className="flex items-center gap-2">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-lg font-extrabold text-white shadow-sm">م</span>
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-lg font-extrabold text-white shadow-sm">ز</span>
               <span className="text-xl font-extrabold">{siteConfig.storeName}</span>
             </Link>
             <p className="max-w-sm text-sm leading-relaxed text-white/65">
-              {siteConfig.taglineAr}
+              زهرة ريحانة متجر متخصص في العطور الأصلية بروح سعودية ولمسة فاخرة تجمع بين العود والمسك وورد الطائف والعنبر.
+            </p>
+            <p className="text-sm font-semibold text-white/80">
+              Made with <span className="text-red-500">❤</span> in Saudi Arabia
             </p>
             <div className="flex items-center gap-2">
               {social.map((s) => (

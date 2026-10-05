@@ -1,10 +1,12 @@
 import { NavItem } from '@/types';
 
 export const siteConfig = {
-  storeName: 'متجر أناقة',
-  storeNameEn: 'Anaqa Store',
-  taglineAr: 'منتجات مختارة بعناية لتجربة تسوّق أفضل',
-  taglineEn: 'Curated products for a better shopping experience',
+  storeName: 'زهرة ريحانة',
+  storeNameEn: 'Zahret Rayhana',
+  taglineAr: 'عطور أصلية مستوحاة من الهوية السعودية',
+  taglineEn: 'Authentic Saudi-inspired luxury perfumes',
+  originLine: 'Made with ❤ in Saudi Arabia',
+  brandNoteAr: 'عطور أصلية مستوحاة من الهوية السعودية',
   logo: '/logo.svg',
   currency: {
     code: 'SAR',
@@ -14,9 +16,9 @@ export const siteConfig = {
   contact: {
     phone: '+966 11 234 5678',
     phoneDisplay: '+966 11 234 5678',
-    email: 'support@anaqa-store.sa',
+    email: 'support@zahret-rayhana.sa',
     whatsapp: '+966 55 123 4567',
-    hoursAr: 'يومياً من 9 صباحاً حتى 11 مساءً',
+    hoursAr: 'يوميا من 9 صباحا حتى 11 مساء',
     hoursEn: 'Daily from 9 AM to 11 PM',
   },
   address: {
@@ -28,7 +30,7 @@ export const siteConfig = {
   shipping: {
     freeThreshold: 200,
     standardCost: 25,
-    estimatedDaysAr: '٢-٥ أيام عمل',
+    estimatedDaysAr: '2-5 أيام عمل',
   },
   social: {
     twitter: 'https://twitter.com',

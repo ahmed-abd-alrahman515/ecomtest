@@ -6,7 +6,7 @@ import { categories } from '@/data/categories';
 import { products } from '@/data/products';
 import type { CSSProperties } from 'react';
 
-const visualOrder = ['fashion', 'home', 'electronics', 'beauty', 'gifts', 'accessories'];
+const visualOrder = ['oud', 'musk', 'taif-rose', 'amber-saffron', 'luxury-gifts', 'oriental-perfumes'];
 
 export function CategoriesSection() {
   const orderedCategories = visualOrder
@@ -29,10 +29,10 @@ export function CategoriesSection() {
         <Reveal className="mb-9 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end lg:mb-10">
           <div>
             <h2 className="text-3xl font-extrabold leading-tight text-navy lg:text-[42px]">
-              <span className="text-primary">تسوّق</span> حسب التصنيف
+              <span className="text-primary">تسوق</span> حسب الرائحة
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-7 text-muted-foreground lg:text-base">
-              استكشف مجموعاتنا المتنوعة من المنتجات المختارة بعناية لتناسب أسلوب حياتك.
+              استكشف مجموعات العود والمسك وورد الطائف والعنبر، بروائح سعودية أصلية مختارة بعناية.
             </p>
           </div>
           <Link

@@ -4,9 +4,9 @@ import { Reveal } from '@/components/shared/reveal';
 const benefits = [
   { icon: Truck, title: 'توصيل سريع', desc: 'لجميع مناطق المملكة' },
   { icon: ShieldCheck, title: 'دفع آمن', desc: 'حماية كاملة لبياناتك' },
-  { icon: BadgeCheck, title: 'منتجات مختارة', desc: 'جودة موثوقة' },
-  { icon: Headphones, title: 'دعم العملاء', desc: 'من ٩ص حتى ١١م' },
-  { icon: RefreshCw, title: 'استبدال واسترجاع', desc: 'خلال ١٤ يوماً' },
+  { icon: BadgeCheck, title: 'عطور أصلية', desc: 'جودة موثوقة' },
+  { icon: Headphones, title: 'دعم العملاء', desc: 'من 9ص حتى 11م' },
+  { icon: RefreshCw, title: 'استبدال واسترجاع', desc: 'خلال 14 يوما' },
 ];
 
 export function TrustStrip() {

@@ -1,10 +1,10 @@
 export type CategorySlug =
-  | 'electronics'
-  | 'home'
-  | 'fashion'
-  | 'beauty'
-  | 'accessories'
-  | 'gifts';
+  | 'oriental-perfumes'
+  | 'musk'
+  | 'taif-rose'
+  | 'oud'
+  | 'amber-saffron'
+  | 'luxury-gifts';
 
 export interface Category {
   id: string;
@@ -19,7 +19,7 @@ export interface Category {
 export type BadgeType = 'best-seller' | 'new' | 'sale' | 'limited';
 
 export interface ProductVariant {
-  name: string; // e.g. "اللون" or "الحجم"
+  name: string;
   options: string[];
 }
 

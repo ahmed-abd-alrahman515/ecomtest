@@ -5,7 +5,7 @@ import { Reveal } from '@/components/shared/reveal';
 
 export function AboutSection() {
   const points = [
-    { icon: BadgeCheck, title: 'منتجات مختارة بعناية' },
+    { icon: BadgeCheck, title: 'عطور أصلية مختارة بعناية' },
     { icon: Truck, title: 'توصيل سريع داخل المملكة' },
     { icon: Headphones, title: 'دعم قبل وبعد الطلب' },
   ];
@@ -18,8 +18,8 @@ export function AboutSection() {
             <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-[var(--soft-shadow)]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://images.pexels.com/photos/12277020/pexels-photo-12277020.jpeg?auto=compress&cs=tinysrgb&h=800&w=1200"
-                alt="تجربة تسوق أبسط"
+                src="/image/8.png"
+                alt="قصة عطور زهرة ريحانة"
                 className="h-full w-full object-cover"
                 loading="lazy"
               />
@@ -32,10 +32,10 @@ export function AboutSection() {
               <span className="text-sm font-bold text-primary">من نحن</span>
             </div>
             <h2 className="text-3xl font-extrabold leading-tight text-navy lg:text-4xl">
-              تجربة تسوق أبسط
+              عطور سعودية بروح فاخرة
             </h2>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground lg:text-lg">
-              نختار لك منتجات تجمع بين الجودة، التصميم، والسعر المناسب لتستمتع بتجربة تسوق أكثر سهولة ووضوحاً من أول تصفح حتى وصول الطلب.
+              زهرة ريحانة متجر متخصص في العطور الأصلية بروح سعودية ولمسة فاخرة تجمع بين العود والمسك وورد الطائف والعنبر.
             </p>
 
             <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3">
@@ -55,7 +55,7 @@ export function AboutSection() {
 
             <Button asChild size="lg" className="mt-8">
               <Link href="/about">
-                تعرّف علينا
+                تعرف علينا
                 <ArrowLeft className="ml-2 h-4 w-4" />
               </Link>
             </Button>

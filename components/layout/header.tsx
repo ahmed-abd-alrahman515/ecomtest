@@ -48,8 +48,8 @@ export function Header() {
       <div className="hidden bg-navy text-white/90 md:block">
         <div className="container mx-auto flex h-9 items-center justify-between px-4 text-xs">
           <p className="flex items-center gap-2">
-            <span className="inline-block h-1.5 w-1.5 rounded-full bg-green-400" />
-            توصيل سريع لجميع مناطق المملكة
+            <span className="inline-block h-1.5 w-1.5 rounded-full bg-amber-300" />
+            عطور أصلية مستوحاة من الهوية السعودية
           </p>
           <div className="flex items-center gap-4">
             <span>رقم التواصل: {siteConfig.contact.phoneDisplay}</span>
@@ -83,7 +83,7 @@ export function Header() {
                 <div className="flex h-16 items-center border-b px-4">
                   <SheetClose asChild>
                     <Link href="/" className="flex items-center gap-2" aria-label={siteConfig.storeName}>
-                      <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white font-bold text-sm shadow-sm">م</span>
+                      <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-sm font-bold text-white shadow-sm">ز</span>
                       <span className="font-bold text-navy">{siteConfig.storeName}</span>
                     </Link>
                   </SheetClose>
@@ -121,8 +121,8 @@ export function Header() {
 
           {/* Logo */}
           <Link href="/" className="group flex shrink-0 items-center gap-2" aria-label={siteConfig.storeName}>
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-white font-extrabold text-lg shadow-sm transition-transform group-hover:-translate-y-0.5 lg:h-10 lg:w-10">
-              م
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-lg font-extrabold text-white shadow-sm transition-transform group-hover:-translate-y-0.5 lg:h-10 lg:w-10">
+              ز
             </span>
             <span className="hidden text-lg font-bold text-navy sm:block lg:text-xl">{siteConfig.storeName}</span>
           </Link>

@@ -23,8 +23,8 @@ export function NewArrivalsSection() {
       <div className="premium-container">
         <div className="flex items-start justify-between gap-4">
           <SectionHeading
-            title="وصل حديثاً"
-            subtitle="أحدث الإضافات التي اخترناها لك، بتفاصيل عملية ولمسة تناسب أسلوبك."
+            title="وصل حديثا"
+            subtitle="إضافات عطرية جديدة من زهرة ريحانة بروائح المسك والعنبر والورد الفاخر."
             href="/products"
           />
           <Reveal className="mt-1 hidden gap-2 md:flex" animation="fadeIn">

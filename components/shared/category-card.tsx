@@ -39,7 +39,7 @@ export function CategoryCard({ category, productCount, className, style, variant
             <p className="mt-1 text-xs text-white/80">{productCount} منتج</p>
           )}
           <div className="mt-3 flex items-center gap-1 text-sm font-medium transition-all group-hover:gap-2">
-            تسوّق الآن
+            تسوق الآن
             <ArrowLeft className="h-4 w-4" />
           </div>
         </div>

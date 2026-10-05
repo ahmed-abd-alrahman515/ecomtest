@@ -20,9 +20,9 @@ export function Newsletter() {
   return (
     <div className="flex flex-col items-center gap-6 py-12 lg:flex-row lg:justify-between lg:py-10">
       <div className="text-center lg:text-right">
-        <h3 className="text-xl font-bold text-white lg:text-2xl">اشترك لتصلك أحدث العروض</h3>
+        <h3 className="text-xl font-bold text-white lg:text-2xl">اشترك لتصلك أحدث العطور والعروض</h3>
         <p className="mt-2 text-sm text-white/60">
-          كن أول من يعرف عن المنتجات الجديدة والعروض الحصرية
+          كن أول من يعرف عن إصدارات زهرة ريحانة ومجموعات الإهداء الفاخرة
         </p>
       </div>
       <form onSubmit={handleSubmit} className="flex w-full max-w-md gap-2">

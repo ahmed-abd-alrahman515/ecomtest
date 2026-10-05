@@ -22,7 +22,7 @@ const tajawal = Tajawal({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://anaqa-store.sa'),
+  metadataBase: new URL('https://zahret-rayhana.sa'),
   title: {
     default: `${siteConfig.storeName} | ${siteConfig.taglineAr}`,
     template: `%s | ${siteConfig.storeName}`,

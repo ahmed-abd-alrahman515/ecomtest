@@ -15,10 +15,10 @@ export function BestSellersSection() {
     <section className="premium-section bg-surface">
       <div className="premium-container">
         <SectionHeading
-          title="الأكثر مبيعاً"
-          subtitle="منتجات اختارها عملاؤنا أكثر من غيرها، بتقييمات عالية وتجربة شراء موثوقة."
+          title="العطور الأكثر مبيعا"
+          subtitle="اختيارات العملاء من عطور زهرة ريحانة الأصلية، بروائح العود والمسك وورد الطائف والعنبر."
           href="/products"
-          hrefLabel="عرض جميع المنتجات"
+          hrefLabel="عرض جميع العطور"
         />
 
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-4">
@@ -32,7 +32,7 @@ export function BestSellersSection() {
                 <img
                   src={featured.images[0]}
                   alt={featured.nameAr}
-                  className="absolute inset-0 h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-[1.04]"
+                  className="absolute inset-0 h-full w-full object-cover opacity-85 transition-transform duration-700 group-hover:scale-[1.04]"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/55 to-transparent" />
@@ -47,7 +47,7 @@ export function BestSellersSection() {
                   </p>
                   <div className="mt-5 flex items-end justify-between gap-3">
                     <div>
-                      <p className="text-xs text-white/60">ابتداءً من</p>
+                      <p className="text-xs text-white/60">ابتداء من</p>
                       <p className="text-2xl font-extrabold">{formatPrice(featured.price)}</p>
                     </div>
                     <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-primary transition-transform group-hover:-translate-x-1">
@@ -77,8 +77,10 @@ export function BestSellersSection() {
               <BadgeCheck className="h-5 w-5" />
             </span>
             <div>
-              <p className="text-sm font-bold text-navy">منتجات موثوقة ومجربة</p>
-              <p className="text-xs text-muted-foreground">مختارة بعناية لتناسب احتياجك اليومي.</p>
+              <p className="text-sm font-bold text-navy">منتجات أصلية بروح سعودية</p>
+              <p className="text-xs text-muted-foreground">
+                Made with <span className="text-red-500">❤</span> in Saudi Arabia
+              </p>
             </div>
           </div>
           <Button asChild variant="outline" className="shrink-0">
